@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/final.css">
+    <link rel="icon" type="img" href="სურათები/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>main</title>
+</head>
+<body>
+    <header>
+        <div class="mainheader">
+        <h1><a href="#"><img src="სურათები/king.png" alt="mefe"></a></h1>
+        <nav>
+            <ul>
+                <li><a href="main.html" style="color: blue;">მთავარი</a></li>
+                <li><a href="aboutus.html">ჩვენს შესახებ</a></li>
+                <li><a href="reclam.html">რეკლამა</a></li>
+                <li><a href="contact.html">კონტაქტი</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <main>
+        <div class="mainhome">
+            <h2>ინფორმაცია ქართველ მეფეთა შესახებ</h2>
+            <div class="img">
+                <img src="სურათები/world.png" alt="sarchevi">
+            </div>
+            
+            <form class="example" action="/action_page.php">
+                <input type="text" onkeyup="search_animal()" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            <ol id='list'>
+                <li class="animals">Cat</li>
+                <li class="animals">Dog</li>
+                <li class="animals">Elephant</li>
+                <li class="animals">Fish</li>
+                <li class="animals">Gorilla</li>
+                <li class="animals">Monkey</li>
+                <li class="animals">Turtle</li>
+                <li class="animals">Whale</li>
+                <li class="animals">Aligator</li>
+                <li class="animals">Donkey</li>
+                <li class="animals">Horse</li>
+            </ol>
+            <script>
+                // JavaScript code
+            function search_animal() {
+                let input = document.getElementById('searchbar').value
+                input=input.toLowerCase();
+                let x = document.getElementsByClassName('animals');
+                
+                for (i = 0; i < x.length; i++) {
+                    if (!x[i].innerHTML.toLowerCase().includes(input)) {
+                        x[i].style.display="none";
+                    }
+                    else {
+                        x[i].style.display="list-item";				
+                    }
+                }
+            }
+            
+            </script>
+        </div>
+    </main>
+    <footer>
+        <div class="footercenter">
+       <div class="last">
+           <p>
+            ავტორი :დავით დუდაშვილი
+           </p>
+           <p>
+            tel:551-04-84-46
+           </p>
+           <p>
+            gmail:dudashvilidato2318@gmail.com
+           </p>
+       </div>
+       <div class="last">
+           <a href="https://www.facebook.com/davit.dudashvili.1" target="_blank"><img src="სურათები/facebook-app-symbol.png" alt="facebook" width="26px"></a>
+           <a href="https://twitter.com/D_a_t_o23?t=H9pPc3i54cAxw6_x5g-MVw&s=09" target="_blank"><img src="სურათები/twitter.png" alt="twitter" width="30px"></a>
+           <p>&copy; ყველა უფლება დაცულია</p>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>
+<img src="https://www.flaticon.com/premium-icon/king_3943651?term=king&related_id=3943651" alt="">

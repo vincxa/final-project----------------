@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #faedcd;
+}
+header{
+    background-color: #a6b98b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mainheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1024px;
+    margin: 0 auto;
+}
+
+h1{
+    width: 50px;
+    margin-left: 20px;
+}
+h1 img{
+    width: 100%;
+}
+nav{ 
+    width: 550px;
+    margin: 20px auto;
+}
+header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li a{
+    padding: 5px;
+    color: black;
+    font-size: 26px;
+}
+nav ul li a:hover{
+    border-bottom: 2px solid blue;
+}
+.mainhome{
+    width: 1024px;
+    margin: 0 auto;
+}
+.mainhome h2{
+    text-align: center;
+    width: 300px;
+    margin: 20px auto;
+    font-size: 22px;
+}
+.img{
+    width: 400px;
+    margin: 0 auto;
+}
+
+.img img{
+    width: 100%;
+}
+.mainaboutus{
+    width: 1024px;
+    margin: 25px auto;
+    display: flex;
+}
+.mainaboutus h2{
+    font-size: 22px;
+}
+.aboutusimg img{
+    width: 150px;
+}
+.mainreclam{
+    width: 1024px;
+    margin: 50px auto;
+    display: flex;
+}
+.reclam{
+    width: 500px;
+    height: 350px;
+    background-color: rgba(174, 174, 174,0.5);
+}
+.reclam p{
+    font-size: 26px;
+    margin: 30px 15px;
+}
+.contact{
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+}
+form.contacti{
+    width: 100%;
+    margin: 25px;
+}
+form.contacti input{
+    width: 45%;
+    height: 50px;
+    margin: 3px 3px;
+    border: 1px solid grey;
+}
+form.contacti textarea{
+    margin: 3px;
+}
+form.contacti .submit{
+    background-color: rgb(54, 54, 255);
+    color: white;
+    width: 150px;
+}
+form.example{
+    width: 400px;
+    margin: 15px auto;
+    
+}
+form.example input[type=text] {
+    height: 50px;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 300px;
+    background: #f1f1f1;
+    margin: 0 auto;
+    transition: width 0.15s ease-in-out;
+}
+  
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 14px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+form.example input[type=text]:focus {
+    width: 70%;
+}
+
+form.example button:hover {
+    background: #0b7dda;
+}
+  
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.animals{
+    display: list-item;    
+} 
+footer{
+    background-color: #a6b98b;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+
+}
+.footercenter{
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.lost{
+    padding: 5px 10px;
+    font-size: 20px;
+    align-self: flex-end;
+    
+}
